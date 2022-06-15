@@ -117,6 +117,19 @@ button:hover {
     margin: 0 5px;
 }
 
+input {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+
 footer {
     height: 100px;
 }
