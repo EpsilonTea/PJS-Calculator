@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 .title-container {
     text-align: center;
     font-family: 'Blinker', sans-serif;
@@ -33,7 +37,7 @@
 
 .table {
     font-family: 'Blinker', sans-serif;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 600;
     margin: 90px auto;
     width: 80%;
@@ -89,16 +93,22 @@ button {
 
     margin: 0 5%;
     width: 120px;
-    height: 45px;
+    height: 50px;
     border: 0;
     border-radius: 4px;
     color: white;
     background-color: rgb(21, 189, 27);
+
+    transition: background-color 125ms;
 }
 
 button:hover {
     background-color: rgb(31, 210, 37);
     cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(126, 200, 128);
 }
 
 .result {
@@ -111,6 +121,8 @@ button:hover {
     background-color: lightgray;
     border-radius: 4px;
     padding: 10px 30px;
+    width: 20%;
+    text-align: center;
 }
 
 #result-price {
@@ -127,8 +139,6 @@ input {
     border: 1px solid gray;
     border-radius: 3px;
 }
-
-
 
 footer {
     height: 100px;

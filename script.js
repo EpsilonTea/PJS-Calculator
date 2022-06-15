@@ -23,7 +23,6 @@ const input_list = [
 const calculate_button = document.getElementsByTagName("button")[0]
 const result_div = document.getElementsByClassName("result")[0]
 
-
 function main() {
     // check if button is clicked
     calculate_button.addEventListener("click", () => {
@@ -32,32 +31,33 @@ function main() {
 }
 
 function calculate() {
-    let total = 0
-
     var values_list = []
 
     for (let i = 0; i < input_list.length; i++) {
         if (input_list[i].value == "") {
             values_list.push(0)
-        } else if (Number.isNaN(input_list[i].value)) {
+        } else if (Number.isInteger(parseInt(input_list[i].value)) == false) {
             result_div.innerHTML = "Nombor tak sah"
             return
         } else {
-            values_list.push(input_list[i].value)            
+            values_list.push(parseInt(input_list[i].value))            
         }
     }
 
     // calculate
+    const price_list = [
+        4, 2, 2, 1,
+        10, 5, 5, 2,
+        10, 5, 0, 0
+    ]
 
+    let total = 0
 
+    for (let i = 0; i < values_list.length; i++) {
+        total += values_list[i] * price_list[i]
+    }
 
-    return
-
-    // for (let i = 0; i < input_list.length; i++) {
-    //     if (Number.isInteger(input_list[i]) != true) {
-    //         
-    //     } 
-    // }
+    result_div.innerHTML = "Jumlah : RM " + total 
 }
 
 main()
