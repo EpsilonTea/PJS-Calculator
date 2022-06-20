@@ -1,8 +1,8 @@
 // DOM Variables
 const AB_DA_input = document.getElementById("AB-DA")
-const AB_DL_input = document.getElementById("AB-DL")
+// const AB_DL_input = document.getElementById("AB-DL")
 const AB_SA_input = document.getElementById("AB-SA")
-const AB_SL_input = document.getElementById("AB-SL")
+// const AB_SL_input = document.getElementById("AB-SL")
 
 const A_DA_input = document.getElementById("A-DA")
 const A_DL_input = document.getElementById("A-DL")
@@ -11,13 +11,13 @@ const A_SL_input = document.getElementById("A-SL")
 
 const LL_DA_input = document.getElementById("LL-DA")
 const LL_DL_input = document.getElementById("LL-DL")
-const LL_SA_input = document.getElementById("LL-SA")
-const LL_SL_input = document.getElementById("LL-SL")
+// const LL_SA_input = document.getElementById("LL-SA")
+// const LL_SL_input = document.getElementById("LL-SL")
 
 const input_list = [
-    AB_DA_input, AB_DL_input, AB_SA_input, AB_SL_input,
+    AB_DA_input, AB_SA_input,
     A_DA_input, A_DL_input, A_SA_input, A_SL_input,
-    LL_DA_input, LL_DL_input, LL_SA_input, LL_SL_input
+    LL_DA_input, LL_DL_input
 ]
 
 const calculate_button = document.getElementsByTagName("button")[0]
@@ -46,9 +46,9 @@ function calculate() {
 
     // calculate
     const price_list = [
-        4, 2, 2, 1,
+        4, 2,
         10, 5, 5, 2,
-        10, 5, 0, 0
+        10, 5
     ]
 
     let total = 0
