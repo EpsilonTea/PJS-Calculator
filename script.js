@@ -20,13 +20,18 @@ const input_list = [
     LL_DA_input, LL_DL_input
 ]
 
-const calculate_button = document.getElementsByTagName("button")[0]
+const clear_button = document.getElementsByTagName("button")[0]
+const calculate_button = document.getElementsByTagName("button")[1]
 const result_div = document.getElementsByClassName("result")[0]
 
 function main() {
     // check if button is clicked
     calculate_button.addEventListener("click", () => {
         calculate()
+    })
+
+    clear_button.addEventListener("click", () => {
+        clear()
     })
 }
 
@@ -58,6 +63,14 @@ function calculate() {
     }
 
     result_div.innerHTML = "Jumlah : RM " + total 
+}
+
+function clear() {
+    for (let i = 0; i < input_list.length; i++) {
+        input_list[i].value = ""
+    }
+
+    result_div.innerHTML = "Jumlah : RM 0" 
 }
 
 main()

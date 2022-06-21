@@ -91,25 +91,47 @@ button {
     font-size: 30px;
     font-weight: 600;
 
-    margin: 0 5%;
+    margin: 0 2.5%;
     width: 120px;
     height: 50px;
     border: 0;
     border-radius: 4px;
+
+}
+
+#kira {
     color: white;
     background-color: rgb(21, 189, 27);
 
     transition: background-color 125ms;
 }
 
-button:hover {
+#kira:hover {
     background-color: rgb(31, 210, 37);
     cursor: pointer;
 }
 
-button:active {
+#kira:active {
     background-color: rgb(126, 200, 128);
 }
+
+
+#padam {
+    color: white;
+    background-color: rgb(211, 47, 47);
+
+    transition: background-color 125ms;
+}
+
+#padam:hover {
+    background-color: rgb(195, 83, 83);
+    cursor: pointer;
+}
+
+#padam:active {
+    background-color: rgb(211, 90, 90);
+}
+
 
 .result {
     margin: 0 10%;
